@@ -17,7 +17,7 @@ Features:
 
 ```ruby
 gem 'simple_form'
-gem 'bootstrap_autocomplete_input', branch: 'bootstrap4'
+gem 'bootstrap_autocomplete_input'
 
 ```
 
