@@ -24,10 +24,23 @@ gem 'bootstrap_autocomplete_input'
 It assumes that you have Bootstrap 3 in your application. For example, you can use the [bootstrap-sass gem](https://github.com/twbs/bootstrap-sass).
 
 ```ruby
-gem 'jquery-rails'
+gem 'jquery-rails', '~>4.2.2'
 gem 'jquery-ui-rails'
-gem 'sass-rails', '>= 3.2'
-gem 'bootstrap-sass', '~> 3.3.1'
+gem 'sass-rails', '~>5.0.6'
+
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+
+# Tooltips and popovers depend on tether for positioning. If you use them, add tether to the Gemfile:
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+
+# if problems with SSL - use source 'http://insecure.rails-assets.org' 
+
+...
+
+end
 ```
 
 
