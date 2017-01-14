@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'debug/:action', to: 'debug#action'
+
   resources :orders do
     get :autocomplete_client_name, :on => :collection
   end

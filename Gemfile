@@ -26,7 +26,8 @@ gem 'sqlite3'
 
 gem 'turbolinks'
 
-# good
+#
+gem 'haml-rails', '~>0.9.0'
 gem 'jquery-rails', '~>4.2.2'
 gem 'jquery-ui-rails'
 gem 'sass-rails', '~>5.0.6'
