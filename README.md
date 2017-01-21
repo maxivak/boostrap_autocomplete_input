@@ -21,12 +21,13 @@ gem 'bootstrap_autocomplete_input'
 
 ```
 
-It assumes that you have Bootstrap 3 in your application. For example, you can use the [bootstrap-sass gem](https://github.com/twbs/bootstrap-sass).
+It assumes that you have Bootstrap 4 in your application. 
+For example, you can use the [bootstrap-rubygem gem](https://github.com/twbs/bootstrap-rubygem).
 
 ```ruby
 gem 'jquery-rails', '~>4.2.2'
 gem 'jquery-ui-rails'
-gem 'sass-rails', '~>5.0.6'
+gem 'sass-rails'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
