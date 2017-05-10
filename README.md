@@ -229,6 +229,13 @@ end
 
 * additional WHERE conditions
 
+* add additional filter using :where option
+```
+autocomplete :client, :name, { :where => 'region_id=1' }
+```
+
+
+
 
 # model
 
