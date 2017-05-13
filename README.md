@@ -225,15 +225,51 @@ class ClientsController < ApplicationController
 end
 ```
 
-### where
+### where, where_method
 
-* additional WHERE conditions
+Additional WHERE conditions
 
-* add additional filter using :where option
+* Add additional filter using :scopes option
+```
+autocomplete :client, :name, { :scopes => [:w_usa, :w_active]}
+
+# defined scopes in model
+class Client < ActiveRecord::Base
+  ...
+  # scopes
+  scope :w_usa, -> { where(region_id: 1) }
+  scope :w_active, -> { where(active: true) }
+  
+end
+
+```
+
+
+* Add additional filter using :where option with search condition
 ```
 autocomplete :client, :name, { :where => 'region_id=1' }
 ```
 
+* For dynamic search conditions use :where_method option
+```
+class ClientsController < ApplicationController
+    autocomplete :client, :name, { :where_method => :w_region }
+    
+    ...
+    
+    def w_region
+        # get value from params
+        v = params[:region_id]
+        
+        if v
+           return "region_id=#{v}"
+        end
+         
+        nil 
+    end
+end    
+    
+```
 
 
 
@@ -446,6 +482,21 @@ end
 
 
 ```
+
+
+# Customization
+
+## Custom controller action
+
+You can write your own method to retrieve data instead of
+```
+autocomplete :client, :name
+```
+which actually generates method 'autocomplete_client_name'.
+
+See example - https://github.com/maxivak/bootstrap3_autocomplete_input/wiki/search-custom-method
+
+
 
 
 # Tests
