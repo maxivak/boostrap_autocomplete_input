@@ -5,6 +5,11 @@
 //= require bootstrap-sprockets
 
 //= require bootstrap3-typeahead.min
-//= require bootstrap-autocomplete-input.min
+//= require bootstrap-autocomplete-input
 
-//= require turbolinks
+// no Turbolinks
+//= require bootstrap-autocomplete-input-init
+
+// with Turbolinks
+// require turbolinks
+// require bootstrap-autocomplete-input-init-turbolinks

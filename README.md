@@ -49,12 +49,24 @@ end
 
 Include two js files (bootstrap3-typeahead.min, bootstrap-autocomplete-input.min) in your assets file 'app/assets/javascripts/application.js' after 'bootstrap.js'.
 
-```bash
+```
 //= require jquery2
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap3-typeahead.min
-//= require bootstrap-autocomplete-input.min
+//= require bootstrap-autocomplete-input
+//= require bootstrap-autocomplete-input-init
+
+```
+
+for Turbolinks:
+```
+//= require jquery2
+//= require jquery_ujs
+//= require bootstrap
+//= require bootstrap3-typeahead.min
+//= require bootstrap3-autocomplete-input
+//= require bootstrap3-autocomplete-input-init-turbolinks
 
 ```
 
@@ -66,7 +78,7 @@ All CSS for autocomplete input is already contained in Bootstrap 3 CSS.
 
 For example, if you use bootstrap-sass, your css files 'app/assets/stylesheets/application.css.scss' might be like
 
-```  
+```
 @import "bootstrap";
 ```
 
