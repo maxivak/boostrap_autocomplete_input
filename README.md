@@ -54,6 +54,7 @@ Include two js files (bootstrap3-typeahead.min, bootstrap-autocomplete-input.min
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap3-typeahead.min
+
 //= require bootstrap-autocomplete-input
 //= require bootstrap-autocomplete-input-init
 
@@ -65,8 +66,9 @@ for Turbolinks:
 //= require jquery_ujs
 //= require bootstrap
 //= require bootstrap3-typeahead.min
-//= require bootstrap3-autocomplete-input
-//= require bootstrap3-autocomplete-input-init-turbolinks
+
+//= require bootstrap-autocomplete-input
+//= require bootstrap-autocomplete-input-init-turbolinks
 
 ```
 
