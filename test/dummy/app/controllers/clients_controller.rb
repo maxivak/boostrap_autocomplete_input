@@ -1,15 +1,15 @@
 class ClientsController < ApplicationController
   before_action :set_client, only: [:show, :edit, :update, :destroy]
 
-  #autocomplete :client, :name
+  autocomplete :client, :name
   #autocomplete :client, :name, { :where_method => :w_region }
   #autocomplete :client, :name, {order: Proc.new { params[:myorder] || 'id' }}
-  autocomplete :client, :name, { :where => 'company_id=1' }
+  #autocomplete :client, :name, { :where => 'client_id=1' }
   #autocomplete :client, :name, {extra_columns: ['id', 'name'], display_id: 'id', display_value: 'name'}
 
   def w_region
     # get value from params
-    v = params[:company_id]
+    v = params[:client_id]
 
     if v
       w = "id=#{v}"
