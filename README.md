@@ -86,6 +86,29 @@ For example, if you use bootstrap-sass, your css files 'app/assets/stylesheets/a
 
 
 
+## Webpack
+
+use with Webpacker
+
+```
+yarn add https://github.com/maxivak/bootstrap-autocomplete-input-assets
+
+
+```
+
+* `app/javascript/packs/application.js`
+```
+...
+
+// autocomplete
+import 'bootstrap-autocomplete-input-assets/src/js/bootstrap3-typeahead.min.js';
+import 'bootstrap-autocomplete-input-assets/src/js/bootstrap-autocomplete-input.min.js';
+```
+ 
+
+
+
+
 
 # Usage
 
