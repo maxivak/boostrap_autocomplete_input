@@ -34,8 +34,10 @@ gem 'sass-rails', '~>5.0.6'
 #gem 'coffee-rails', '~> 3.2.2'
 gem 'uglifier', '>= 1.3.0'
 
-# bootstrap v4 alpha
-gem 'bootstrap', '~> 4.0.0.alpha6'
+# bootstrap v4
+gem "bootstrap", ">= 4.1.2"
+
+
 
 source 'http://insecure.rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
