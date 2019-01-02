@@ -13,10 +13,10 @@ gemspec
 # To use debugger
 # gem 'debugger'
 
-gem 'rails', '5.0.1'
+gem 'rails', '5.2.2'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma', '~> 3.11'
 
 #
 gem 'sqlite3'
@@ -27,7 +27,7 @@ gem 'sqlite3'
 gem 'turbolinks'
 
 #
-gem 'haml-rails', '~>0.9.0'
+gem 'haml-rails', '1.0.0'
 gem 'jquery-rails', '~>4.2.2'
 gem 'jquery-ui-rails'
 gem 'sass-rails', '~>5.0.6'
